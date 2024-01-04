@@ -1,3 +1,6 @@
 [submodule "visual"]
 	path = visual
 	url = https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2022-2023/03-visual
+[submodule "perf/FlameGraph"]
+	path = perf/FlameGraph
+	url = git@github.com:brendangregg/FlameGraph.git
