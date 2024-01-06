@@ -1,0 +1,816 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         32768 B, 64 B, 8-way associative
+LL cache:         9437184 B, 64 B, 18-way associative
+Command:          ../visual/build/graph
+Data file:        cachegrind.out.28114
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                     I1mr                ILmr             Dr                   D1mr                DLmr             Dw                   D1mw                DLmw             
+--------------------------------------------------------------------------------
+2,828,413,288 (100.0%) 50,916,991 (100.0%) 136,147 (100.0%) 722,987,385 (100.0%) 22,823,566 (100.0%) 721,740 (100.0%) 381,302,320 (100.0%) 19,397,147 (100.0%) 811,105 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                     I1mr                ILmr            Dr                   D1mr               DLmr             Dw                   D1mw                DLmw              file:function
+--------------------------------------------------------------------------------
+1,464,578,769 (51.78%) 19,845,606 (38.98%) 74,143 (54.46%) 326,031,788 (45.10%) 8,894,205 (38.97%) 339,851 (47.09%) 181,925,368 (47.71%) 16,798,064 (86.60%) 429,887 (53.00%)  ???:???
+   87,498,877 ( 3.09%)    545,378 ( 1.07%)     48 ( 0.04%)  26,292,838 ( 3.64%)   195,993 ( 0.86%)   7,350 ( 1.02%)  12,787,925 ( 3.35%)     21,781 ( 0.11%)     178 ( 0.02%)  ./malloc/./malloc/malloc.c:_int_free
+   62,242,510 ( 2.20%)      5,498 ( 0.01%)     76 ( 0.06%)  22,242,738 ( 3.08%) 3,111,160 (13.63%)  27,778 ( 3.85%)   5,150,840 ( 1.35%)     14,714 ( 0.08%)     128 ( 0.02%)  ./elf/./elf/dl-lookup.c:do_lookup_x
+   54,324,516 ( 1.92%)     77,176 ( 0.15%)     18 ( 0.01%)  21,555,308 ( 2.98%)   479,767 ( 2.10%)     766 ( 0.11%)     307,952 ( 0.08%)          0                0           ???:QMetaObject::indexOfProperty(char const*) const
+   52,471,429 ( 1.86%)    998,060 ( 1.96%)    126 ( 0.09%)   9,149,950 ( 1.27%)   303,331 ( 1.33%)     657 ( 0.09%)   8,193,264 ( 2.15%)    201,297 ( 1.04%)  71,108 ( 8.77%)  ./malloc/./malloc/malloc.c:_int_malloc
+   52,193,244 ( 1.85%)    206,688 ( 0.41%)     14 ( 0.01%)  13,535,879 ( 1.87%)   389,197 ( 1.71%)     541 ( 0.07%)   6,439,905 ( 1.69%)     11,079 ( 0.06%)      73 ( 0.01%)  ./malloc/./malloc/malloc.c:malloc
+   34,451,940 ( 1.22%)        268 ( 0.00%)     36 ( 0.03%)  12,918,844 ( 1.79%)     1,858 ( 0.01%)       0            1,355,170 ( 0.36%)          0                0           ???:adler32_z
+   28,859,700 ( 1.02%)     47,268 ( 0.09%)     10 ( 0.01%)     116,947 ( 0.02%)        19 ( 0.00%)       0           27,551,061 ( 7.23%)    478,558 ( 2.47%)  36,260 ( 4.47%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms
+   25,450,256 ( 0.90%)     88,822 ( 0.17%)     10 ( 0.01%)   9,236,106 ( 1.28%)   204,139 ( 0.89%)   2,829 ( 0.39%)   4,597,646 ( 1.21%)      2,016 ( 0.01%)       1 ( 0.00%)  ./malloc/./malloc/malloc.c:free
+   21,083,027 ( 0.75%)     66,728 ( 0.13%)      6 ( 0.00%)  10,447,164 ( 1.44%)   171,375 ( 0.75%)     401 ( 0.06%)   1,936,448 ( 0.51%)          0                0           ???:QBrush::operator=(QBrush const&)
+   19,500,007 ( 0.69%)     80,825 ( 0.16%)      7 ( 0.01%)   9,749,990 ( 1.35%)    42,060 ( 0.18%)       9 ( 0.00%)   4,333,342 ( 1.14%)     66,754 ( 0.34%)     199 ( 0.02%)  ???:QBrush::QBrush()
+   14,417,943 ( 0.51%)     80,406 ( 0.16%)      7 ( 0.01%)   7,839,970 ( 1.08%)   210,349 ( 0.92%)     839 ( 0.12%)   1,568,200 ( 0.41%)          3 ( 0.00%)       0           ???:QBrush::~QBrush()
+   14,296,561 ( 0.51%)    177,441 ( 0.35%)      8 ( 0.01%)   1,425,868 ( 0.20%)         0                0            2,596,711 ( 0.68%)     35,502 ( 0.18%)     472 ( 0.06%)  ???:QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>)
+   13,997,370 ( 0.49%)    130,014 ( 0.26%)     46 ( 0.03%)   3,153,282 ( 0.44%)   151,354 ( 0.66%)     696 ( 0.10%)           0                   0                0           ./string/../sysdeps/x86_64/multiarch/strcmp-avx2.S:__strcmp_avx2
+   13,545,259 ( 0.48%)      3,564 ( 0.01%)     56 ( 0.04%)   2,428,262 ( 0.34%)    81,055 ( 0.36%)  25,480 ( 3.53%)     929,464 ( 0.24%)      1,363 ( 0.01%)      89 ( 0.01%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x
+   12,525,093 ( 0.44%)     26,993 ( 0.05%)     29 ( 0.02%)   3,563,345 ( 0.49%)    43,907 ( 0.19%)      73 ( 0.01%)   1,617,450 ( 0.42%)         90 ( 0.00%)       0           ???:g_hash_table_lookup
+   12,412,994 ( 0.44%)    113,709 ( 0.22%)     38 ( 0.03%)   4,408,281 ( 0.61%)    73,098 ( 0.32%)  12,221 ( 1.69%)   3,868,724 ( 1.01%)    417,760 ( 2.15%)  88,159 (10.87%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms
+   11,700,213 ( 0.41%)      2,084 ( 0.00%)    195 ( 0.14%)   2,208,944 ( 0.31%)     3,415 ( 0.01%)      35 ( 0.00%)   1,640,038 ( 0.43%)        321 ( 0.00%)      12 ( 0.00%)  ???:inflate
+   10,996,823 ( 0.39%)     69,312 ( 0.14%)      2 ( 0.00%)   2,541,031 ( 0.35%)   104,310 ( 0.46%)     228 ( 0.03%)   2,014,934 ( 0.53%)     10,194 ( 0.05%)       2 ( 0.00%)  ???:QMetaObject::cast(QObject const*) const
+   10,494,137 ( 0.37%)     34,699 ( 0.07%)     20 ( 0.01%)   1,444,529 ( 0.20%)     7,468 ( 0.03%)       0            1,890,565 ( 0.50%)      3,418 ( 0.02%)       4 ( 0.00%)  ???:QPalette::detach()
+   10,438,160 ( 0.37%)        150 ( 0.00%)      6 ( 0.00%)   2,658,622 ( 0.37%)        66 ( 0.00%)       0            1,577,152 ( 0.41%)          0                0           ???:g_hash_table_replace
+   10,383,704 ( 0.37%)     11,587 ( 0.02%)     39 ( 0.03%)   1,702,380 ( 0.24%)       955 ( 0.00%)       0              765,035 ( 0.20%)     13,995 ( 0.07%)     309 ( 0.04%)  ???:QBezier::addToPolygon(QDataBuffer<QPointF>&, double) const
+    9,531,892 ( 0.34%)      9,184 ( 0.02%)      8 ( 0.01%)   1,351,399 ( 0.19%)     7,609 ( 0.03%)     483 ( 0.07%)           0                   0                0           ???:g_str_hash
+    9,178,731 ( 0.32%)         43 ( 0.00%)      3 ( 0.00%)     829,746 ( 0.11%)     1,093 ( 0.00%)     805 ( 0.11%)           0                   0                0           ???:g_ascii_strncasecmp
+    9,134,744 ( 0.32%)     38,947 ( 0.08%)     14 ( 0.01%)   2,015,767 ( 0.28%)   159,955 ( 0.70%)   1,312 ( 0.18%)   1,532,103 ( 0.40%)      3,435 ( 0.02%)     130 ( 0.02%)  ./malloc/./malloc/malloc.c:malloc_consolidate
+    8,042,907 ( 0.28%)     65,993 ( 0.13%)      2 ( 0.00%)   1,652,839 ( 0.23%)   135,016 ( 0.59%)     203 ( 0.03%)           0                   0                0           ???:QMetaObject::inherits(QMetaObject const*) const
+    7,384,545 ( 0.26%)     57,573 ( 0.11%)     32 ( 0.02%)   1,059,868 ( 0.15%)   105,354 ( 0.46%)   3,441 ( 0.48%)           0                   0                0           ./string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2
+    7,256,033 ( 0.26%)        187 ( 0.00%)     48 ( 0.04%)   1,807,716 ( 0.25%)   158,700 ( 0.70%) 142,261 (19.71%)     751,475 ( 0.20%)    182,569 ( 0.94%) 162,851 (20.08%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+    7,168,745 ( 0.25%)     10,767 ( 0.02%)    387 ( 0.28%)   1,359,481 ( 0.19%)    92,278 ( 0.40%)   9,985 ( 1.38%)           0                   0                0           ./string/../sysdeps/x86_64/strcmp.S:strcmp
+    7,107,702 ( 0.25%)     37,457 ( 0.07%)     33 ( 0.02%)   1,672,332 ( 0.23%)        74 ( 0.00%)       6 ( 0.00%)   1,328,869 ( 0.35%)      1,961 ( 0.01%)       0           ???:QPalette::setBrush(QPalette::ColorGroup, QPalette::ColorRole, QBrush const&)
+    7,040,792 ( 0.25%)    164,875 ( 0.32%)     16 ( 0.01%)   2,544,264 ( 0.35%)    31,887 ( 0.14%)      73 ( 0.01%)     870,156 ( 0.23%)          0                0           ???:QCss::Selector::pseudoClass(unsigned long long*) const
+    6,911,967 ( 0.24%)     10,407 ( 0.02%)     26 ( 0.02%)     952,835 ( 0.13%)     5,387 ( 0.02%)     226 ( 0.03%)           0                   0                0           ./string/../sysdeps/x86_64/multiarch/strchr-avx2.S:__strchr_avx2
+    6,773,914 ( 0.24%)     55,370 ( 0.11%)      2 ( 0.00%)   1,451,553 ( 0.20%)    42,215 ( 0.18%)     214 ( 0.03%)           0                   0                0           ???:QWidget::testAttribute_helper(Qt::WidgetAttribute) const
+    6,666,147 ( 0.24%)     22,124 ( 0.04%)     20 ( 0.01%)   1,728,810 ( 0.24%)         0                0              665,118 ( 0.17%)      2,974 ( 0.02%)       7 ( 0.00%)  ???:QCss::Symbol::lexem() const
+    6,345,407 ( 0.22%)    144,774 ( 0.28%)      8 ( 0.01%)   2,057,967 ( 0.28%)    32,699 ( 0.14%)       3 ( 0.00%)   1,028,986 ( 0.27%)      5,755 ( 0.03%)       0           ???:QGuiApplication::font()
+    6,207,637 ( 0.22%)        920 ( 0.00%)     24 ( 0.02%)   1,591,630 ( 0.22%)       259 ( 0.00%)       3 ( 0.00%)   1,273,377 ( 0.33%)        540 ( 0.00%)       9 ( 0.00%)  ???:g_slice_alloc
+    5,962,701 ( 0.21%)    100,788 ( 0.20%)      5 ( 0.00%)   2,169,617 ( 0.30%)    89,615 ( 0.39%)   1,827 ( 0.25%)     546,276 ( 0.14%)          0                0           ./malloc/./malloc/malloc.c:unlink_chunk.constprop.0
+    5,550,065 ( 0.20%)      4,424 ( 0.01%)      4 ( 0.00%)   2,315,244 ( 0.32%)         0                0               57,231 ( 0.02%)          0                0           ???:QCss::Parser::test(QCss::TokenType)
+    5,452,879 ( 0.19%)     65,451 ( 0.13%)     20 ( 0.01%)   1,259,402 ( 0.17%)     2,141 ( 0.01%)      15 ( 0.00%)     720,840 ( 0.19%)      1,072 ( 0.01%)       7 ( 0.00%)  ./malloc/./malloc/malloc.c:realloc
+    5,408,601 ( 0.19%)     83,925 ( 0.16%)     10 ( 0.01%)   2,019,177 ( 0.28%)    33,243 ( 0.15%)     586 ( 0.08%)   1,071,469 ( 0.28%)      1,985 ( 0.01%)       0           ???:QBrush::operator==(QBrush const&) const
+    5,404,605 ( 0.19%)     46,700 ( 0.09%)      2 ( 0.00%)     360,307 ( 0.05%)         0                0                    0                   0                0           ???:qCalculateBlockSize(unsigned long, unsigned long, unsigned long)
+    5,201,687 ( 0.18%)     82,956 ( 0.16%)     35 ( 0.03%)     831,338 ( 0.11%)    15,082 ( 0.07%)       9 ( 0.00%)     303,792 ( 0.08%)      1,203 ( 0.01%)       0           ???:QColor::toHsv() const
+    5,090,340 ( 0.18%)        273 ( 0.00%)      4 ( 0.00%)   1,407,822 ( 0.19%)    12,617 ( 0.06%)       0                    0                   0                0           ???:FcStrSetMember
+    5,078,052 ( 0.18%)     23,251 ( 0.05%)     10 ( 0.01%)     725,436 ( 0.10%)     4,765 ( 0.02%)       1 ( 0.00%)     725,436 ( 0.19%)        689 ( 0.00%)       0           /home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphicnode.cpp:GraphicNode::CenterPosition()
+    5,046,384 ( 0.18%)     18,548 ( 0.04%)      8 ( 0.01%)   1,922,432 ( 0.27%)         0                0              720,912 ( 0.19%)      2,501 ( 0.01%)       0           /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:operator+(QPointF const&, QPointF const&)
+    4,873,008 ( 0.17%)     70,413 ( 0.14%)      4 ( 0.00%)     812,168 ( 0.11%)         0                0              812,168 ( 0.21%)      9,277 ( 0.05%)       5 ( 0.00%)  ???:operator new(unsigned long)
+    4,663,904 ( 0.16%)     80,891 ( 0.16%)      5 ( 0.00%)   1,665,680 ( 0.23%)    14,150 ( 0.06%)       0            1,165,976 ( 0.31%)      1,901 ( 0.01%)      24 ( 0.00%)  ???:QFont::QFont()
+    4,540,984 ( 0.16%)     52,504 ( 0.10%)      6 ( 0.00%)   1,883,720 ( 0.26%)    13,522 ( 0.06%)      98 ( 0.01%)     499,331 ( 0.13%)          2 ( 0.00%)       0           ???:QString::operator=(QString const&)
+    4,504,962 ( 0.16%)     66,511 ( 0.13%)      4 ( 0.00%)   2,658,770 ( 0.37%)    56,316 ( 0.25%)       4 ( 0.00%)           0                   0                0           ???:QWidget::window() const
+    4,345,907 ( 0.15%)     22,116 ( 0.04%)     20 ( 0.01%)     863,974 ( 0.12%)       968 ( 0.00%)      37 ( 0.01%)      79,425 ( 0.02%)          0                0           ???:QCss::Scanner::preprocess(QString const&, bool*)
+    4,305,042 ( 0.15%)     58,725 ( 0.12%)      3 ( 0.00%)   2,441,725 ( 0.34%)     6,546 ( 0.03%)      16 ( 0.00%)       8,834 ( 0.00%)          0                0           ???:QFont::~QFont()
+    4,043,244 ( 0.14%)    166,007 ( 0.33%)    140 ( 0.10%)   1,269,091 ( 0.18%)   104,604 ( 0.46%)     134 ( 0.02%)     760,624 ( 0.20%)    105,419 ( 0.54%)     278 ( 0.03%)  ???:QTextEngine::itemize() const
+    3,981,316 ( 0.14%)    400,741 ( 0.79%)    118 ( 0.09%)   1,211,403 ( 0.17%)    45,164 ( 0.20%)      27 ( 0.00%)     588,495 ( 0.15%)      3,446 ( 0.02%)       2 ( 0.00%)  ???:QApplication::notify(QObject*, QEvent*)
+    3,947,786 ( 0.14%)     81,164 ( 0.16%)      8 ( 0.01%)   1,608,356 ( 0.22%)    26,628 ( 0.12%)       2 ( 0.00%)   1,023,498 ( 0.27%)        478 ( 0.00%)       0           ???:QApplication::style()
+    3,820,885 ( 0.14%)        499 ( 0.00%)      0               93,178 ( 0.01%)    29,225 ( 0.13%)      27 ( 0.00%)           0                   0                0           ./malloc/./malloc/arena.c:free
+    3,794,615 ( 0.13%)     90,005 ( 0.18%)     11 ( 0.01%)     620,937 ( 0.09%)        97 ( 0.00%)       0                    0                   0                0           ???:QRect::operator&(QRect const&) const
+    3,779,910 ( 0.13%)    129,031 ( 0.25%)      3 ( 0.00%)   2,099,950 ( 0.29%)    44,410 ( 0.19%)      52 ( 0.01%)     839,980 ( 0.22%)     19,797 ( 0.10%)      33 ( 0.00%)  ???:QFont::QFont(QFont const&)
+    3,766,986 ( 0.13%)    360,157 ( 0.71%)    238 ( 0.17%)   1,264,881 ( 0.17%)    17,619 ( 0.08%)       4 ( 0.00%)     683,325 ( 0.18%)      3,241 ( 0.02%)       4 ( 0.00%)  ???:QTextLine::layout_helper(int)
+    3,766,223 ( 0.13%)        150 ( 0.00%)     31 ( 0.02%)     940,612 ( 0.13%)    89,256 ( 0.39%)  78,117 (10.82%)     148,334 ( 0.04%)         68 ( 0.00%)       2 ( 0.00%)  ./elf/./elf/do-rel.h:_dl_relocate_object
+    3,722,411 ( 0.13%)     94,239 ( 0.19%)      6 ( 0.00%)   1,354,284 ( 0.19%)    45,821 ( 0.20%)     602 ( 0.08%)     674,762 ( 0.18%)         54 ( 0.00%)       0           ???:QPainterPath::~QPainterPath()
+    3,712,316 ( 0.13%)     43,898 ( 0.09%)     24 ( 0.02%)   1,055,850 ( 0.15%)    42,635 ( 0.19%)     196 ( 0.03%)     221,864 ( 0.06%)          4 ( 0.00%)       0           ./nptl/./nptl/pthread_mutex_lock.c:pthread_mutex_lock@@GLIBC_2.2.5
+    3,652,448 ( 0.13%)     51,496 ( 0.10%)     15 ( 0.01%)   1,216,708 ( 0.17%)     3,436 ( 0.02%)       0              795,896 ( 0.21%)         19 ( 0.00%)       0           ???:QWidget::isActiveWindow() const
+    3,648,136 ( 0.13%)     49,888 ( 0.10%)      8 ( 0.01%)   1,145,057 ( 0.16%)     9,285 ( 0.04%)       1 ( 0.00%)     373,812 ( 0.10%)      5,556 ( 0.03%)       2 ( 0.00%)  ???:QRegion::intersected(QRect const&) const
+    3,502,548 ( 0.12%)     48,216 ( 0.09%)      5 ( 0.00%)     375,273 ( 0.05%)         0                0              375,273 ( 0.10%)      3,181 ( 0.02%)       7 ( 0.00%)  ???:qCalculateGrowingBlockSize(unsigned long, unsigned long, unsigned long)
+    3,464,129 ( 0.12%)     53,259 ( 0.10%)     23 ( 0.02%)     671,966 ( 0.09%)    12,436 ( 0.05%)      88 ( 0.01%)     473,204 ( 0.12%)      9,803 ( 0.05%)   7,684 ( 0.95%)  ./malloc/./malloc/malloc.c:_int_realloc
+    3,449,495 ( 0.12%)     39,098 ( 0.08%)     34 ( 0.02%)     846,538 ( 0.12%)         4 ( 0.00%)       2 ( 0.00%)     492,623 ( 0.13%)          0                0           ???:QPalette::resolve(QPalette const&) const
+    3,442,607 ( 0.12%)     23,232 ( 0.05%)      2 ( 0.00%)   1,590,283 ( 0.22%)    52,989 ( 0.23%)       6 ( 0.00%)           0                   0                0           ???:QRegion::~QRegion()
+    3,438,420 ( 0.12%)     11,871 ( 0.02%)      4 ( 0.00%)   1,375,368 ( 0.19%)         0                0            1,375,368 ( 0.36%)      6,395 ( 0.03%)       0           /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:QPointF::QPointF(double, double)
+    3,417,646 ( 0.12%)    121,454 ( 0.24%)     26 ( 0.02%)   1,213,307 ( 0.17%)   275,570 ( 1.21%)     226 ( 0.03%)     460,790 ( 0.12%)      2,099 ( 0.01%)       3 ( 0.00%)  ???:QWidgetPrivate::paintSiblingsRecursive(QPaintDevice*, QList<QObject*> const&, int, QRegion const&, QPoint const&, QFlags<QWidgetPrivate::DrawWidgetFlag>, QPainter*, QWidgetRepaintManager*)
+    3,391,955 ( 0.12%)    314,672 ( 0.62%)     34 ( 0.02%)   1,021,454 ( 0.14%)    99,844 ( 0.44%)      47 ( 0.01%)     812,699 ( 0.21%)     23,339 ( 0.12%)      19 ( 0.00%)  ???:QWidgetPrivate::drawWidget(QPaintDevice*, QRegion const&, QPoint const&, QFlags<QWidgetPrivate::DrawWidgetFlag>, QPainter*, QWidgetRepaintManager*)
+    3,371,280 ( 0.12%)    180,528 ( 0.35%)     43 ( 0.03%)     885,604 ( 0.12%)    45,066 ( 0.20%)      47 ( 0.01%)     586,459 ( 0.15%)        587 ( 0.00%)       1 ( 0.00%)  ???:QWidget::setAttribute(Qt::WidgetAttribute, bool)
+    3,301,136 ( 0.12%)         39 ( 0.00%)     12 ( 0.01%)     555,032 ( 0.08%)    19,342 ( 0.08%)       6 ( 0.00%)           0                   0                0           ???:_XVIDtoVisual
+    3,299,762 ( 0.12%)     87,946 ( 0.17%)     21 ( 0.02%)     723,850 ( 0.10%)    13,937 ( 0.06%)       4 ( 0.00%)     255,045 ( 0.07%)      6,468 ( 0.03%)      64 ( 0.01%)  ./malloc/./malloc/malloc.c:calloc
+    3,275,030 ( 0.12%)     53,152 ( 0.10%)     12 ( 0.01%)   1,062,090 ( 0.15%)    60,462 ( 0.26%)       2 ( 0.00%)     143,876 ( 0.04%)          0                0           ???:QImage::metric(QPaintDevice::PaintDeviceMetric) const
+    3,240,960 ( 0.11%)         35 ( 0.00%)      5 ( 0.00%)     961,137 ( 0.13%)     1,191 ( 0.01%)       0              160,364 ( 0.04%)         94 ( 0.00%)       0           ???:g_hash_table_iter_next
+    3,218,014 ( 0.11%)     84,827 ( 0.17%)     13 ( 0.01%)     995,577 ( 0.14%)     2,218 ( 0.01%)      28 ( 0.00%)     226,618 ( 0.06%)        347 ( 0.00%)       0           ???:QColor::operator==(QColor const&) const
+    3,163,044 ( 0.11%)     51,975 ( 0.10%)      6 ( 0.00%)     903,733 ( 0.12%)       846 ( 0.00%)       0              338,916 ( 0.09%)      1,995 ( 0.01%)       0           ???:QPalette::brush(QPalette::ColorGroup, QPalette::ColorRole) const
+    3,134,827 ( 0.11%)    131,244 ( 0.26%)     26 ( 0.02%)     575,784 ( 0.08%)    17,326 ( 0.08%)       2 ( 0.00%)     990,307 ( 0.26%)      7,854 ( 0.04%)      12 ( 0.00%)  ???:QBrush::init(QColor const&, Qt::BrushStyle)
+    3,092,141 ( 0.11%)     83,363 ( 0.16%)      5 ( 0.00%)     450,610 ( 0.06%)     8,908 ( 0.04%)      46 ( 0.01%)     465,432 ( 0.12%)          0                0           ???:QPalette::~QPalette()
+    3,086,808 ( 0.11%)     28,691 ( 0.06%)      4 ( 0.00%)   1,060,954 ( 0.15%)     5,627 ( 0.02%)       1 ( 0.00%)     289,252 ( 0.08%)         12 ( 0.00%)       0           ???:QTransform::map(QPointF const&) const
+    3,048,300 ( 0.11%)     43,768 ( 0.09%)      5 ( 0.00%)   1,219,320 ( 0.17%)    42,663 ( 0.19%)       5 ( 0.00%)     853,524 ( 0.22%)     28,415 ( 0.15%)       0           ???:QTransform::operator=(QTransform const&)
+    2,939,305 ( 0.10%)    239,750 ( 0.47%)    118 ( 0.09%)     844,139 ( 0.12%)     3,230 ( 0.01%)       3 ( 0.00%)     355,783 ( 0.09%)      3,753 ( 0.02%)       7 ( 0.00%)  ???:QTextEngine::shapeText(int) const
+    2,928,560 ( 0.10%)      9,353 ( 0.02%)      5 ( 0.00%)   1,325,775 ( 0.18%)         7 ( 0.00%)       1 ( 0.00%)     277,010 ( 0.07%)          0                0           /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h:QArrayData::data()
+    2,906,778 ( 0.10%)     32,471 ( 0.06%)      7 ( 0.01%)   1,038,135 ( 0.14%)        76 ( 0.00%)       0              573,446 ( 0.15%)      4,095 ( 0.02%)       0           /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h:QVector<QPointF>::append(QPointF const&)
+    2,882,718 ( 0.10%)    122,215 ( 0.24%)     13 ( 0.01%)     414,607 ( 0.06%)    27,020 ( 0.12%)       4 ( 0.00%)     225,970 ( 0.06%)        954 ( 0.00%)       0           ???:QTransform::translate(double, double)
+    2,873,214 ( 0.10%)     78,383 ( 0.15%)      8 ( 0.01%)   1,436,607 ( 0.20%)     2,673 ( 0.01%)       1 ( 0.00%)           0                   0                0           ???:QLineEdit::metaObject() const
+    2,872,262 ( 0.10%)     20,379 ( 0.04%)      4 ( 0.00%)   1,436,131 ( 0.20%)    30,524 ( 0.13%)       7 ( 0.00%)           0                   0                0           ???:QRegion::isEmpty() const
+    2,864,728 ( 0.10%)      5,267 ( 0.01%)     10 ( 0.01%)     842,544 ( 0.12%)     7,243 ( 0.03%)      47 ( 0.01%)           0                   0                0           ./nptl/./nptl/pthread_getspecific.c:pthread_getspecific@@GLIBC_2.34
+    2,854,923 ( 0.10%)    233,104 ( 0.46%)     24 ( 0.02%)     913,151 ( 0.13%)    37,169 ( 0.16%)      41 ( 0.01%)     632,216 ( 0.17%)        541 ( 0.00%)       0           ???:QPainter::begin(QPaintDevice*)
+    2,852,795 ( 0.10%)     45,530 ( 0.09%)      2 ( 0.00%)   1,134,105 ( 0.16%)    19,185 ( 0.08%)      21 ( 0.00%)     334,705 ( 0.09%)        363 ( 0.00%)       0           ???:QRegion::operator=(QRegion const&)
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+--------------------------------------------------------------------------------
+Ir               I1mr           ILmr       Dr               D1mr        DLmr       Dw               D1mw           DLmw       
+
+-- line 61 ----------------------------------------
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+      .              .          .                .           .          .                .              .          .           class QVector
+      .              .          .                .           .          .                .              .          .           {
+      .              .          .                .           .          .                .              .          .               typedef QTypedArrayData<T> Data;
+      .              .          .                .           .          .                .              .          .               Data *d;
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           public:
+108,779 ( 0.00%) 4,709 ( 0.01%) 3 ( 0.00%)  29,667 ( 0.00%)  0          0           39,556 ( 0.01%) 2,149 ( 0.01%) 0               inline QVector() noexcept : d(Data::sharedNull()) { }
+      .              .          .                .           .          .                .              .          .               explicit QVector(int size);
+      .              .          .                .           .          .                .              .          .               QVector(int size, const T &t);
+      .              .          .                .           .          .                .              .          .               inline QVector(const QVector<T> &v);
+207,753 ( 0.01%) 4,648 ( 0.01%) 6 ( 0.00%)  69,251 ( 0.01%)  0          0           39,572 ( 0.01%)     0          0               inline ~QVector() { if (!d->ref.deref()) freeData(d); }
+      .              .          .                .           .          .                .              .          .               QVector<T> &operator=(const QVector<T> &v);
+      .              .          .                .           .          .                .              .          .               QVector(QVector<T> &&other) noexcept : d(other.d) { other.d = Data::sharedNull(); }
+      .              .          .                .           .          .                .              .          .               QVector<T> &operator=(QVector<T> &&other) noexcept
+      .              .          .                .           .          .                .              .          .               { QVector moved(std::move(other)); swap(moved); return *this; }
+      .              .          .                .           .          .                .              .          .               void swap(QVector<T> &other) noexcept { qSwap(d, other.d); }
+      .              .          .                .           .          .                .              .          .               inline QVector(std::initializer_list<T> args);
+      .              .          .                .           .          .                .              .          .               QVector<T> &operator=(std::initializer_list<T> args);
+      .              .          .                .           .          .                .              .          .               template <typename InputIterator, QtPrivate::IfIsInputIterator<InputIterator> = true>
+      .              .          .                .           .          .                .              .          .               inline QVector(InputIterator first, InputIterator last);
+      .              .          .                .           .          .                .              .          .               explicit QVector(QArrayDataPointerRef<T> ref) noexcept : d(ref.ptr) {}
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               bool operator==(const QVector<T> &v) const;
+      .              .          .                .           .          .                .              .          .               inline bool operator!=(const QVector<T> &v) const { return !(*this == v); }
+      .              .          .                .           .          .                .              .          .           
+     36 ( 0.00%)     3 ( 0.00%) 1 ( 0.00%)      20 ( 0.00%)  0          0                8 ( 0.00%)     0          0               inline int size() const { return d->size; }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               inline bool isEmpty() const { return d->size == 0; }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               void resize(int size);
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               inline int capacity() const { return int(d->alloc); }
+      .              .          .                .           .          .                .              .          .               void reserve(int size);
+      .              .          .                .           .          .                .              .          .               inline void squeeze()
+-- line 96 ----------------------------------------
+-- line 105 ----------------------------------------
+      .              .          .                .           .          .                .              .          .                   if (d->capacityReserved) {
+      .              .          .                .           .          .                .              .          .                       // capacity reserved in a read only memory would be useless
+      .              .          .                .           .          .                .              .          .                       // this checks avoid writing to such memory.
+      .              .          .                .           .          .                .              .          .                       d->capacityReserved = 0;
+      .              .          .                .           .          .                .              .          .                   }
+      .              .          .                .           .          .                .              .          .               }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               inline void detach();
+475,104 ( 0.02%) 4,743 ( 0.01%) 6 ( 0.00%) 158,368 ( 0.02%)  0          0          118,776 ( 0.03%)     0          0               inline bool isDetached() const { return !d->ref.isShared(); }
+      .              .          .                .           .          .                .              .          .           #if !defined(QT_NO_UNSHARABLE_CONTAINERS)
+      .              .          .                .           .          .                .              .          .               inline void setSharable(bool sharable)
+      .              .          .                .           .          .                .              .          .               {
+      .              .          .                .           .          .                .              .          .                   if (sharable == d->ref.isSharable())
+      .              .          .                .           .          .                .              .          .                       return;
+      .              .          .                .           .          .                .              .          .                   if (!sharable)
+      .              .          .                .           .          .                .              .          .                       detach();
+      .              .          .                .           .          .                .              .          .           
+-- line 121 ----------------------------------------
+-- line 202 ----------------------------------------
+      .              .          .                .           .          .                .              .          .               }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               // STL-style
+      .              .          .                .           .          .                .              .          .               typedef typename Data::iterator iterator;
+      .              .          .                .           .          .                .              .          .               typedef typename Data::const_iterator const_iterator;
+      .              .          .                .           .          .                .              .          .               typedef std::reverse_iterator<iterator> reverse_iterator;
+      .              .          .                .           .          .                .              .          .               typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
+      .              .          .                .           .          .                .              .          .           #if !defined(QT_STRICT_ITERATORS) || defined(Q_CLANG_QDOC)
+    135 ( 0.00%)    14 ( 0.00%) 5 ( 0.00%)      45 ( 0.00%)  0          0               36 ( 0.00%)     0          0               inline iterator begin() { detach(); return d->begin(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator begin() const noexcept { return d->constBegin(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator cbegin() const noexcept { return d->constBegin(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator constBegin() const noexcept { return d->constBegin(); }
+    135 ( 0.00%)     0          0               45 ( 0.00%)  0          0               36 ( 0.00%)     0          0               inline iterator end() { detach(); return d->end(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator end() const noexcept { return d->constEnd(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator cend() const noexcept { return d->constEnd(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator constEnd() const noexcept { return d->constEnd(); }
+      .              .          .                .           .          .                .              .          .           #else
+      .              .          .                .           .          .                .              .          .               inline iterator begin(iterator = iterator()) { detach(); return d->begin(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator begin(const_iterator = const_iterator()) const noexcept { return d->constBegin(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator cbegin(const_iterator = const_iterator()) const noexcept { return d->constBegin(); }
+      .              .          .                .           .          .                .              .          .               inline const_iterator constBegin(const_iterator = const_iterator()) const noexcept { return d->constBegin(); }
+-- line 222 ----------------------------------------
+-- line 284 ----------------------------------------
+      .              .          .                .           .          .                .              .          .               void shrink_to_fit() { squeeze(); }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               // comfort
+      .              .          .                .           .          .                .              .          .               QVector<T> &operator+=(const QVector<T> &l);
+      .              .          .                .           .          .                .              .          .               inline QVector<T> operator+(const QVector<T> &l) const
+      .              .          .                .           .          .                .              .          .               { QVector n = *this; n += l; return n; }
+      .              .          .                .           .          .                .              .          .               inline QVector<T> &operator+=(const T &t)
+      .              .          .                .           .          .                .              .          .               { append(t); return *this; }
+237,288 ( 0.01%) 6,718 ( 0.01%) 3 ( 0.00%)       0           0          0          118,644 ( 0.03%)     0          0               inline QVector<T> &operator<< (const T &t)
+316,384 ( 0.01%)     0          0          197,740 ( 0.03%)  0          0           39,548 ( 0.01%)     0          0               { append(t); return *this; }
+      .              .          .                .           .          .                .              .          .               inline QVector<T> &operator<<(const QVector<T> &l)
+      .              .          .                .           .          .                .              .          .               { *this += l; return *this; }
+      .              .          .                .           .          .                .              .          .               inline QVector<T> &operator+=(T &&t)
+      .              .          .                .           .          .                .              .          .               { append(std::move(t)); return *this; }
+      .              .          .                .           .          .                .              .          .               inline QVector<T> &operator<<(T &&t)
+      .              .          .                .           .          .                .              .          .               { append(std::move(t)); return *this; }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               static QVector<T> fromList(const QList<T> &list);
+-- line 301 ----------------------------------------
+-- line 354 ----------------------------------------
+      .              .          .                .           .          .                .              .          .                   while (srcFrom != srcTo)
+      .              .          .                .           .          .                .              .          .                       new (dstFrom++) T(*srcFrom++);
+      .              .          .                .           .          .                .              .          .               } else {
+      .              .          .                .           .          .                .              .          .                   ::memcpy(static_cast<void *>(dstFrom), static_cast<const void *>(srcFrom), (srcTo - srcFrom) * sizeof(T));
+      .              .          .                .           .          .                .              .          .               }
+      .              .          .                .           .          .                .              .          .           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+ 59,358 ( 0.00%) 4,638 ( 0.01%) 2 ( 0.00%)       0           0          0           39,572 ( 0.01%)     0          0           void QVector<T>::destruct(T *from, T *to)
+      .              .          .                .           .          .                .              .          .           {
+      .              .          .                .           .          .                .              .          .               if (QTypeInfo<T>::isComplex) {
+158,192 ( 0.01%)     0          0           98,870 ( 0.01%)  0          0                0              0          0                   while (from != to) {
+118,644 ( 0.00%)     0          0           39,548 ( 0.01%)  0          0           39,548 ( 0.01%)     0          0                       from++->~T();
+      .              .          .                .           .          .                .              .          .                   }
+      .              .          .                .           .          .                .              .          .               }
+ 39,566 ( 0.00%)     0          0           19,786 ( 0.00%)  0          0                0              0          0           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+     44 ( 0.00%)     3 ( 0.00%) 1 ( 0.00%)       4 ( 0.00%)  0          0               24 ( 0.00%)     0          0           inline QVector<T>::QVector(const QVector<T> &v)
+      .              .          .                .           .          .                .              .          .           {
+     24 ( 0.00%)     3 ( 0.00%) 1 ( 0.00%)       8 ( 0.00%)  0          0                4 ( 0.00%)     0          0               if (v.d->ref.ref()) {
+     16 ( 0.00%)     0          0               12 ( 0.00%)  0          0                4 ( 0.00%)     1 ( 0.00%) 0                   d = v.d;
+      .              .          .                .           .          .                .              .          .               } else {
+      .              .          .                .           .          .                .              .          .                   if (v.d->capacityReserved) {
+      .              .          .                .           .          .                .              .          .                       d = Data::allocate(v.d->alloc);
+      .              .          .                .           .          .                .              .          .                       Q_CHECK_PTR(d);
+      .              .          .                .           .          .                .              .          .                       d->capacityReserved = true;
+      .              .          .                .           .          .                .              .          .                   } else {
+      .              .          .                .           .          .                .              .          .                       d = Data::allocate(v.d->size);
+      .              .          .                .           .          .                .              .          .                       Q_CHECK_PTR(d);
+      .              .          .                .           .          .                .              .          .                   }
+      .              .          .                .           .          .                .              .          .                   if (d->alloc) {
+      .              .          .                .           .          .                .              .          .                       copyConstruct(v.d->begin(), v.d->end(), d->begin());
+      .              .          .                .           .          .                .              .          .                       d->size = v.d->size;
+      .              .          .                .           .          .                .              .          .                   }
+      .              .          .                .           .          .                .              .          .               }
+     40 ( 0.00%)     6 ( 0.00%) 2 ( 0.00%)      24 ( 0.00%)  0          0                0              0          0           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           #if defined(Q_CC_MSVC)
+      .              .          .                .           .          .                .              .          .           #pragma warning( pop )
+      .              .          .                .           .          .                .              .          .           #endif
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+    144 ( 0.00%)     7 ( 0.00%) 2 ( 0.00%)      18 ( 0.00%)  0          0               54 ( 0.00%)     0          0           void QVector<T>::detach()
+      .              .          .                .           .          .                .              .          .           {
+    108 ( 0.00%)     3 ( 0.00%) 2 ( 0.00%)      18 ( 0.00%)  0          0               18 ( 0.00%)     0          0               if (!isDetached()) {
+      .              .          .                .           .          .                .              .          .           #if !defined(QT_NO_UNSHARABLE_CONTAINERS)
+     24 ( 0.00%)     3 ( 0.00%) 1 ( 0.00%)      12 ( 0.00%)  0          0                0              0          0                   if (!d->alloc)
+      .              .          .                .           .          .                .              .          .                       d = Data::unsharableEmpty();
+      .              .          .                .           .          .                .              .          .                   else
+      .              .          .                .           .          .                .              .          .           #endif
+     56 ( 0.00%)     3 ( 0.00%) 1 ( 0.00%)      20 ( 0.00%)  0          0                8 ( 0.00%)     0          0                       realloc(int(d->alloc));
+      .              .          .                .           .          .                .              .          .               }
+     90 ( 0.00%)     4 ( 0.00%) 2 ( 0.00%)      18 ( 0.00%)  0          0               18 ( 0.00%)     0          0               Q_ASSERT(isDetached());
+    108 ( 0.00%)     4 ( 0.00%) 1 ( 0.00%)      72 ( 0.00%)  0          0                0              0          0           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+      .              .          .                .           .          .                .              .          .           void QVector<T>::reserve(int asize)
+      .              .          .                .           .          .                .              .          .           {
+      .              .          .                .           .          .                .              .          .               if (asize > int(d->alloc))
+      .              .          .                .           .          .                .              .          .                   realloc(asize);
+      .              .          .                .           .          .                .              .          .               if (isDetached()
+      .              .          .                .           .          .                .              .          .           #if !defined(QT_NO_UNSHARABLE_CONTAINERS)
+-- line 416 ----------------------------------------
+-- line 568 ----------------------------------------
+      .              .          .                .           .          .                .              .          .           QVector<T>::QVector(InputIterator first, InputIterator last)
+      .              .          .                .           .          .                .              .          .               : QVector()
+      .              .          .                .           .          .                .              .          .           {
+      .              .          .                .           .          .                .              .          .               QtPrivate::reserveIfForwardIterator(this, first, last);
+      .              .          .                .           .          .                .              .          .               std::copy(first, last, std::back_inserter(*this));
+      .              .          .                .           .          .                .              .          .           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+ 69,251 ( 0.00%)     6 ( 0.00%) 4 ( 0.00%)       0           0          0           39,572 ( 0.01%)     0          0           void QVector<T>::freeData(Data *x)
+      .              .          .                .           .          .                .              .          .           {
+148,395 ( 0.01%)     1 ( 0.00%) 1 ( 0.00%)  29,679 ( 0.00%)  0          0           29,679 ( 0.01%)     0          0               destruct(x->begin(), x->end());
+ 29,679 ( 0.00%)     4 ( 0.00%) 2 ( 0.00%)   9,893 ( 0.00%)  0          0            9,893 ( 0.00%)     0          0               Data::deallocate(x);
+ 39,572 ( 0.00%)     1 ( 0.00%) 1 ( 0.00%)  29,679 ( 0.00%)  0          0                0              0          0           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           #if defined(Q_CC_MSVC)
+      .              .          .                .           .          .                .              .          .           QT_WARNING_PUSH
+      .              .          .                .           .          .                .              .          .           QT_WARNING_DISABLE_MSVC(4127) // conditional expression is constant
+      .              .          .                .           .          .                .              .          .           #endif
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+      .              .          .                .           .          .                .              .          .           void QVector<T>::reallocData(const int asize, const int aalloc, QArrayData::AllocationOptions options)
+-- line 588 ----------------------------------------
+-- line 682 ----------------------------------------
+      .              .          .                .           .          .                .              .          .               Q_ASSERT(d != Data::unsharableEmpty());
+      .              .          .                .           .          .                .              .          .           #endif
+      .              .          .                .           .          .                .              .          .               Q_ASSERT(aalloc ? d != Data::sharedNull() : d == Data::sharedNull());
+      .              .          .                .           .          .                .              .          .               Q_ASSERT(d->alloc >= uint(aalloc));
+      .              .          .                .           .          .                .              .          .               Q_ASSERT(d->size == asize);
+      .              .          .                .           .          .                .              .          .           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template<typename T>
+158,240 ( 0.01%) 4,682 ( 0.01%) 3 ( 0.00%)       0           0          0           98,900 ( 0.03%)     0          0           void QVector<T>::realloc(int aalloc, QArrayData::AllocationOptions options)
+      .              .          .                .           .          .                .              .          .           {
+ 98,900 ( 0.00%)     0          0           79,120 ( 0.01%)  0          0                0              0          0               Q_ASSERT(aalloc >= d->size);
+ 59,340 ( 0.00%)     5 ( 0.00%) 2 ( 0.00%)  39,560 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               Data *x = d;
+      .              .          .                .           .          .                .              .          .           
+ 98,900 ( 0.00%) 4,708 ( 0.01%) 2 ( 0.00%)  39,560 ( 0.01%)  0          0           39,560 ( 0.01%)     0          0               const bool isShared = d->ref.isShared();
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               QT_TRY {
+      .              .          .                .           .          .                .              .          .                   // allocate memory
+138,460 ( 0.00%)     1 ( 0.00%) 1 ( 0.00%)  39,560 ( 0.01%)  0          0           39,560 ( 0.01%)     0          0                   x = Data::allocate(aalloc, options);
+ 39,560 ( 0.00%)     0          0           19,780 ( 0.00%)  0          0                0              0          0                   Q_CHECK_PTR(x);
+      .              .          .                .           .          .                .              .          .                   // aalloc is bigger then 0 so it is not [un]sharedEmpty
+      .              .          .                .           .          .                .              .          .           #if !defined(QT_NO_UNSHARABLE_CONTAINERS)
+ 98,900 ( 0.00%) 4,917 ( 0.01%) 3 ( 0.00%)  19,780 ( 0.00%)  0          0           19,780 ( 0.01%)     0          0                   Q_ASSERT(x->ref.isSharable() || options.testFlag(QArrayData::Unsharable));
+      .              .          .                .           .          .                .              .          .           #endif
+118,680 ( 0.00%) 4,688 ( 0.01%) 4 ( 0.00%)  19,780 ( 0.00%)  0          0           19,780 ( 0.01%)     0          0                   Q_ASSERT(!x->ref.isStatic());
+ 98,900 ( 0.00%)     5 ( 0.00%) 2 ( 0.00%)  79,120 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0                   x->size = d->size;
+      .              .          .                .           .          .                .              .          .           
+118,680 ( 0.00%) 4,637 ( 0.01%) 2 ( 0.00%)  39,560 ( 0.01%)  0          0           39,560 ( 0.01%)     0          0                   T *srcBegin = d->begin();
+118,680 ( 0.00%)     1 ( 0.00%) 1 ( 0.00%)  39,560 ( 0.01%)  0          0           39,560 ( 0.01%)     0          0                   T *srcEnd = d->end();
+ 98,900 ( 0.00%)     4 ( 0.00%) 1 ( 0.00%)  19,780 ( 0.00%)  0          0           39,560 ( 0.01%)     0          0                   T *dst = x->begin();
+      .              .          .                .           .          .                .              .          .           
+ 39,548 ( 0.00%) 4,638 ( 0.01%) 2 ( 0.00%)  19,774 ( 0.00%)  0          0                0              0          0                   if (!QTypeInfoQuery<T>::isRelocatable || (isShared && QTypeInfo<T>::isComplex)) {
+      .              .          .                .           .          .                .              .          .                       QT_TRY {
+ 19,774 ( 0.00%)     0          0            9,887 ( 0.00%)  0          0                0              0          0                           if (isShared || !std::is_nothrow_move_constructible<T>::value) {
+      .              .          .                .           .          .                .              .          .                               // we can not move the data, we need to copy construct it
+ 49,435 ( 0.00%) 4,638 ( 0.01%) 2 ( 0.00%)  19,774 ( 0.00%)  0          0                0              0          0                               while (srcBegin != srcEnd)
+      .              .          .                .           .          .                .              .          .                                   new (dst++) T(*srcBegin++);
+      .              .          .                .           .          .                .              .          .                           } else {
+      .              .          .                .           .          .                .              .          .                               while (srcBegin != srcEnd)
+      .              .          .                .           .          .                .              .          .                                   new (dst++) T(std::move(*srcBegin++));
+      .              .          .                .           .          .                .              .          .                           }
+      .              .          .                .           .          .                .              .          .                       } QT_CATCH (...) {
+      .              .          .                .           .          .                .              .          .                           // destruct already copied objects
+      .              .          .                .           .          .                .              .          .                           destruct(x->begin(), dst);
+      .              .          .                .           .          .                .              .          .                           QT_RETHROW;
+      .              .          .                .           .          .                .              .          .                       }
+      .              .          .                .           .          .                .              .          .                   } else {
+ 79,144 ( 0.00%) 4,637 ( 0.01%) 2 ( 0.00%)  39,572 ( 0.01%)  0          0            9,893 ( 0.00%)     0          0                       ::memcpy(static_cast<void *>(dst), static_cast<void *>(srcBegin), (srcEnd - srcBegin) * sizeof(T));
+ 29,679 ( 0.00%)     1 ( 0.00%) 1 ( 0.00%)  29,679 ( 0.00%)  0          0                0              0          0                       dst += srcEnd - srcBegin;
+      .              .          .                .           .          .                .              .          .                   }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               } QT_CATCH (...) {
+      .              .          .                .           .          .                .              .          .                   Data::deallocate(x);
+      .              .          .                .           .          .                .              .          .                   QT_RETHROW;
+      .              .          .                .           .          .                .              .          .               }
+237,360 ( 0.01%) 4,641 ( 0.01%) 3 ( 0.00%)  98,900 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               x->capacityReserved = d->capacityReserved;
+      .              .          .                .           .          .                .              .          .           
+ 79,120 ( 0.00%)     0          0           59,340 ( 0.01%)  0          0                0              0          0               Q_ASSERT(d != x);
+138,460 ( 0.00%) 4,642 ( 0.01%) 4 ( 0.00%)  39,560 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               if (!d->ref.deref()) {
+ 39,548 ( 0.00%)     0          0           19,774 ( 0.00%)  0          0                0              0          0                   if (!QTypeInfoQuery<T>::isRelocatable || !aalloc || (isShared && QTypeInfo<T>::isComplex)) {
+      .              .          .                .           .          .                .              .          .                       // data was copy constructed, we need to call destructors
+      .              .          .                .           .          .                .              .          .                       // or if !alloc we did nothing to the old 'd'.
+      .              .          .                .           .          .                .              .          .                       freeData(d);
+      .              .          .                .           .          .                .              .          .                   } else {
+ 39,548 ( 0.00%)     0          0           19,774 ( 0.00%)  0          0            9,887 ( 0.00%)     0          0                       Data::deallocate(d);
+      .              .          .                .           .          .                .              .          .                   }
+      .              .          .                .           .          .                .              .          .               }
+ 59,340 ( 0.00%) 4,642 ( 0.01%) 4 ( 0.00%)  39,560 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               d = x;
+      .              .          .                .           .          .                .              .          .           
+118,680 ( 0.00%) 4,637 ( 0.01%) 2 ( 0.00%)  39,560 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               Q_ASSERT(d->data());
+197,800 ( 0.01%) 4,642 ( 0.01%) 4 ( 0.00%) 118,680 ( 0.02%)  0          0                0              0          0               Q_ASSERT(uint(d->size) <= d->alloc);
+      .              .          .                .           .          .                .              .          .           #if !defined(QT_NO_UNSHARABLE_CONTAINERS)
+ 98,900 ( 0.00%)     5 ( 0.00%) 2 ( 0.00%)  39,560 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               Q_ASSERT(d != Data::unsharableEmpty());
+      .              .          .                .           .          .                .              .          .           #endif
+ 98,900 ( 0.00%) 4,642 ( 0.01%) 4 ( 0.00%)  39,560 ( 0.01%)  0          0           19,780 ( 0.01%)     0          0               Q_ASSERT(d != Data::sharedNull());
+158,240 ( 0.01%) 4,638 ( 0.01%) 2 ( 0.00%)  79,120 ( 0.01%)  0          0                0              0          0               Q_ASSERT(d->alloc >= uint(aalloc));
+ 79,120 ( 0.00%) 4,637 ( 0.01%) 1 ( 0.00%)  59,340 ( 0.01%)  0          0                0              0          0           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           #if defined(Q_CC_MSVC)
+      .              .          .                .           .          .                .              .          .           QT_WARNING_POP
+      .              .          .                .           .          .                .              .          .           #endif
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template<typename T>
+      .              .          .                .           .          .                .              .          .           Q_OUTOFLINE_TEMPLATE T QVector<T>::value(int i) const
+      .              .          .                .           .          .                .              .          .           {
+-- line 765 ----------------------------------------
+-- line 770 ----------------------------------------
+      .              .          .                .           .          .                .              .          .           }
+      .              .          .                .           .          .                .              .          .           template<typename T>
+      .              .          .                .           .          .                .              .          .           Q_OUTOFLINE_TEMPLATE T QVector<T>::value(int i, const T &defaultValue) const
+      .              .          .                .           .          .                .              .          .           {
+      .              .          .                .           .          .                .              .          .               return uint(i) >= uint(d->size) ? defaultValue : d->begin()[i];
+      .              .          .                .           .          .                .              .          .           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+395,560 ( 0.01%) 9,288 ( 0.02%) 4 ( 0.00%)  39,556 ( 0.01%)  0          0          197,780 ( 0.05%)     0          0           void QVector<T>::append(const T &t)
+      .              .          .                .           .          .                .              .          .           {
+474,672 ( 0.02%)     4 ( 0.00%) 1 ( 0.00%) 237,336 ( 0.03%) 79 ( 0.00%) 0           39,556 ( 0.01%)     0          0               const bool isTooSmall = uint(d->size + 1) > d->alloc;
+435,114 ( 0.02%) 4,644 ( 0.01%) 2 ( 0.00%)  69,223 ( 0.01%)  0          0           39,556 ( 0.01%)     0          0               if (!isDetached() || isTooSmall) {
+ 98,876 ( 0.00%)     0          0           59,326 ( 0.01%)  0          0           39,550 ( 0.01%)     0          0                   T copy(t);
+158,208 ( 0.01%) 4,643 ( 0.01%) 3 ( 0.00%)  19,776 ( 0.00%)  0          0           19,776 ( 0.01%)     0          0                   QArrayData::AllocationOptions opt(isTooSmall ? QArrayData::Grow : QArrayData::Default);
+237,312 ( 0.01%) 4,642 ( 0.01%) 2 ( 0.00%) 118,656 ( 0.02%)  0          0           19,776 ( 0.01%)     0          0                   realloc(isTooSmall ? d->size + 1 : d->alloc, opt);
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .                   if (QTypeInfo<T>::isComplex)
+355,932 ( 0.01%) 4,638 ( 0.01%) 2 ( 0.00%)  79,096 ( 0.01%)  0          0           98,870 ( 0.03%) 2,146 ( 0.01%) 0                       new (d->end()) T(std::move(copy));
+      .              .          .                .           .          .                .              .          .                   else
+     22 ( 0.00%)     1 ( 0.00%) 1 ( 0.00%)       6 ( 0.00%)  0          0                6 ( 0.00%)     0          0                       *d->end() = std::move(copy);
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .               } else {
+      .              .          .                .           .          .                .              .          .                   if (QTypeInfo<T>::isComplex)
+276,836 ( 0.01%)     0          0           98,870 ( 0.01%)  0          0           79,096 ( 0.02%) 1,949 ( 0.01%) 0                       new (d->end()) T(t);
+      .              .          .                .           .          .                .              .          .                   else
+     48 ( 0.00%)    10 ( 0.00%) 0               24 ( 0.00%)  0          0               12 ( 0.00%)     1 ( 0.00%) 0                       *d->end() = t;
+      .              .          .                .           .          .                .              .          .               }
+197,780 ( 0.01%) 4,639 ( 0.01%) 3 ( 0.00%) 118,668 ( 0.02%)  0          0           39,556 ( 0.01%)     0          0               ++d->size;
+276,892 ( 0.01%)     4 ( 0.00%) 1 ( 0.00%) 197,780 ( 0.03%)  0          0                0              0          0           }
+      .              .          .                .           .          .                .              .          .           
+      .              .          .                .           .          .                .              .          .           template <typename T>
+      .              .          .                .           .          .                .              .          .           void QVector<T>::append(T &&t)
+      .              .          .                .           .          .                .              .          .           {
+      .              .          .                .           .          .                .              .          .               const bool isTooSmall = uint(d->size + 1) > d->alloc;
+      .              .          .                .           .          .                .              .          .               if (!isDetached() || isTooSmall) {
+      .              .          .                .           .          .                .              .          .                   QArrayData::AllocationOptions opt(isTooSmall ? QArrayData::Grow : QArrayData::Default);
+      .              .          .                .           .          .                .              .          .                   realloc(isTooSmall ? d->size + 1 : d->alloc, opt);
+-- line 806 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphicnode.cpp
+--------------------------------------------------------------------------------
+Ir                 I1mr            ILmr       Dr               D1mr           DLmr       Dw               D1mw         DLmw       
+
+        .               .          .                .              .          .                .            .          .           #include "Headers/graphicnode.h"
+        .               .          .                .              .          .                .            .          .           #include "Headers/node.h"
+        .               .          .                .              .          .                .            .          .           #include "qgraphicsscene.h"
+        .               .          .                .              .          .                .            .          .           #include "qgraphicssceneevent.h"
+        .               .          .                .              .          .                .            .          .           #include "math.h"
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           #include <QPainter>
+        .               .          .                .              .          .                .            .          .           
+       40 ( 0.00%)      4 ( 0.00%) 1 ( 0.00%)       4 ( 0.00%)     0          0               20 ( 0.00%)   0          0           GraphicNode::GraphicNode(Node *node)
+        .               .          .                .              .          .                .            .          .               : QGraphicsObject()
+       92 ( 0.00%)      8 ( 0.00%) 2 ( 0.00%)      28 ( 0.00%)     0          0               24 ( 0.00%)   2 ( 0.00%) 0               , m_Node(node) {
+       52 ( 0.00%)      4 ( 0.00%) 1 ( 0.00%)       4 ( 0.00%)     0          0               16 ( 0.00%)   0          0                setFlags(GraphicsItemFlag::ItemIsSelectable | GraphicsItemFlag::ItemIsMovable | GraphicsItemFlag::ItemSendsGeometryChanges);
+       20 ( 0.00%)      0          0                4 ( 0.00%)     0          0                4 ( 0.00%)   0          0               setAcceptHoverEvents(true);
+        .               .          .                .              .          .                .            .          .           
+       28 ( 0.00%)      4 ( 0.00%) 1 ( 0.00%)      20 ( 0.00%)     0          0                0            0          0           }
+        .               .          .                .              .          .                .            .          .           
+       72 ( 0.00%)      7 ( 0.00%) 2 ( 0.00%)       8 ( 0.00%)     0          0               24 ( 0.00%)   1 ( 0.00%) 0           GraphicNode::~GraphicNode() {
+        .               .          .                .              .          .                .            .          .           
+       76 ( 0.00%)      1 ( 0.00%) 0               32 ( 0.00%)     0          0               16 ( 0.00%)   0          0           }
+        .               .          .                .              .          .                .            .          .           
+        5 ( 0.00%)      0          0                0              0          0                1 ( 0.00%)   0          0           QColor GraphicNode::m_color = QColor("white");
+        .               .          .                .              .          .                .            .          .           int GraphicNode::m_height = 50;
+        .               .          .                .              .          .                .            .          .           int GraphicNode::m_width = 50;
+        .               .          .                .              .          .                .            .          .           
+   48,792 ( 0.00%)  4,616 ( 0.01%) 1 ( 0.00%)       0              0          0           24,396 ( 0.01%) 184 ( 0.00%) 0           QRectF GraphicNode::boundingRect() const {
+  130,112 ( 0.00%)    454 ( 0.00%) 0           32,528 ( 0.00%) 7,671 ( 0.03%) 2 ( 0.00%)   8,132 ( 0.00%)   0          0               return QRectF(0, 0, GraphicNode::m_width, GraphicNode::m_height);
+   24,396 ( 0.00%)      0          0           24,396 ( 0.00%)     0          0                0            0          0           }
+        .               .          .                .              .          .                .            .          .           
+    6,286 ( 0.00%)    449 ( 0.00%) 2 ( 0.00%)     449 ( 0.00%)     0          0            4,041 ( 0.00%)   0          0           void GraphicNode::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+        .               .          .                .              .          .                .            .          .               Q_UNUSED(option);
+        .               .          .                .              .          .                .            .          .               Q_UNUSED(widget);
+        .               .          .                .              .          .                .            .          .           
+    4,041 ( 0.00%)    449 ( 0.00%) 2 ( 0.00%)       0              0          0              898 ( 0.00%)   0          0               QPen pen(Qt::black);
+    1,796 ( 0.00%)      0          0                0              0          0              449 ( 0.00%)   0          0               pen.setWidth(2);
+        .               .          .                .              .          .                .            .          .           
+   17,722 ( 0.00%)  1,347 ( 0.00%) 6 ( 0.00%)     785 ( 0.00%)     0          0            2,355 ( 0.00%)   0          0               if(m_brush != QBrush(Qt::yellow) && m_brush != QBrush(Qt::red)) {
+    5,040 ( 0.00%)    336 ( 0.00%) 2 ( 0.00%)     336 ( 0.00%)     0          0            1,008 ( 0.00%)   0          0                   m_brush = QBrush(GraphicNode::m_color);
+        .               .          .                .              .          .                .            .          .               }
+        .               .          .                .              .          .                .            .          .           
+    2,694 ( 0.00%)    113 ( 0.00%) 0              898 ( 0.00%)     0          0              449 ( 0.00%)   0          0               painter->setBrush(m_brush);
+    2,245 ( 0.00%)    449 ( 0.00%) 2 ( 0.00%)     449 ( 0.00%)     0          0              449 ( 0.00%)   0          0               painter->setPen(pen);
+    6,286 ( 0.00%)    449 ( 0.00%) 2 ( 0.00%)   2,245 ( 0.00%)   450 ( 0.00%) 2 ( 0.00%)     898 ( 0.00%)   0          0               painter->drawEllipse(boundingRect());
+        .               .          .                .              .          .                .            .          .           
+    6,286 ( 0.00%)    449 ( 0.00%) 0              898 ( 0.00%)   679 ( 0.00%) 0            1,347 ( 0.00%)   0          0               const auto text = QString::fromStdString(m_Node->name());
+   11,674 ( 0.00%)    898 ( 0.00%) 4 ( 0.00%)   2,245 ( 0.00%)   603 ( 0.00%) 0            2,245 ( 0.00%)   0          0               painter->drawText(boundingRect(), Qt::AlignHCenter | Qt::AlignVCenter, text);
+    6,735 ( 0.00%)  1,347 ( 0.00%) 2 ( 0.00%)   3,143 ( 0.00%)   486 ( 0.00%) 0              898 ( 0.00%)   0          0           }
+        .               .          .                .              .          .                .            .          .           
+  725,436 ( 0.03%)  9,344 ( 0.02%) 4 ( 0.00%)  80,604 ( 0.01%)     0          0          322,416 ( 0.08%)   1 ( 0.00%) 0           QPointF GraphicNode::CenterPosition() {
+3,788,388 ( 0.13%) 13,907 ( 0.03%) 6 ( 0.00%) 241,812 ( 0.03%) 4,765 ( 0.02%) 1 ( 0.00%) 403,020 ( 0.11%) 688 ( 0.00%) 0               return pos() + QPointF(GraphicNode::m_width / 2, GraphicNode::m_height / 2);
+  564,228 ( 0.02%)      0          0          403,020 ( 0.06%)     0          0                0            0          0           }
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+    1,236 ( 0.00%)    206 ( 0.00%) 1 ( 0.00%)     103 ( 0.00%)     0          0              721 ( 0.00%)   0          0           void GraphicNode::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
+      618 ( 0.00%)      0          0              206 ( 0.00%)     0          0              103 ( 0.00%)   0          0               QGraphicsObject::mouseMoveEvent(event);
+        .               .          .                .              .          .                .            .          .           
+      927 ( 0.00%)      0          0              103 ( 0.00%)     0          0              103 ( 0.00%)   0          0               if(x() < 0) {
+        .               .          .                .              .          .                .            .          .                   setPos(0, y());
+    3,193 ( 0.00%)    309 ( 0.00%) 3 ( 0.00%)     824 ( 0.00%)   103 ( 0.00%) 0              721 ( 0.00%)   0          0               } else if (x() + boundingRect().right() > scene()->width()) {
+        .               .          .                .              .          .                .            .          .                   setPos(scene()->width() - boundingRect().width(), y());
+        .               .          .                .              .          .                .            .          .               }
+        .               .          .                .              .          .                .            .          .           
+      927 ( 0.00%)    206 ( 0.00%) 2 ( 0.00%)     103 ( 0.00%)     0          0              103 ( 0.00%)   0          0               if (y() < 0) {
+        .               .          .                .              .          .                .            .          .                   setPos(x(), 0);
+    3,193 ( 0.00%)    309 ( 0.00%) 3 ( 0.00%)     824 ( 0.00%)     0          0              721 ( 0.00%)   0          0               } else if (y()+ boundingRect().bottom() > scene()->height()) {
+        .               .          .                .              .          .                .            .          .                   setPos(x(), scene()->height() - boundingRect().height());
+        .               .          .                .              .          .                .            .          .               }
+        .               .          .                .              .          .                .            .          .           
+      309 ( 0.00%)      0          0              103 ( 0.00%)     0          0              103 ( 0.00%)   0          0               emit needRedraw();
+    1,030 ( 0.00%)      0          0              721 ( 0.00%)     0          0                0            0          0           }
+        .               .          .                .              .          .                .            .          .           
+       99 ( 0.00%)     11 ( 0.00%) 1 ( 0.00%)      11 ( 0.00%)     0          0               44 ( 0.00%)   0          0           void GraphicNode::hoverEnterEvent(QGraphicsSceneHoverEvent *event) {
+      154 ( 0.00%)     11 ( 0.00%) 1 ( 0.00%)      11 ( 0.00%)     0          0               33 ( 0.00%)   0          0               m_brush = QBrush(Qt::yellow);
+       33 ( 0.00%)      0          0               11 ( 0.00%)     0          0               11 ( 0.00%)   0          0               emit needRedraw();
+       66 ( 0.00%)      0          0               22 ( 0.00%)     0          0               11 ( 0.00%)   0          0               QGraphicsObject::hoverEnterEvent(event);
+       66 ( 0.00%)      0          0               44 ( 0.00%)     0          0                0            0          0           }
+       99 ( 0.00%)     22 ( 0.00%) 1 ( 0.00%)      11 ( 0.00%)     0          0               44 ( 0.00%)   0          0           void GraphicNode::hoverLeaveEvent(QGraphicsSceneHoverEvent *event) {
+       55 ( 0.00%)      0          0               22 ( 0.00%)     7 ( 0.00%) 0                0            0          0               if(!m_algorithm) {
+      176 ( 0.00%)     11 ( 0.00%) 1 ( 0.00%)      11 ( 0.00%)     0          0               33 ( 0.00%)   0          0                   m_brush = QBrush(GraphicNode::m_color);
+        .               .          .                .              .          .                .            .          .               }
+        .               .          .                .              .          .                .            .          .               else {
+        .               .          .                .              .          .                .            .          .                   m_brush = QBrush(Qt::red);
+        .               .          .                .              .          .                .            .          .               }
+        .               .          .                .              .          .                .            .          .           
+       33 ( 0.00%)     11 ( 0.00%) 1 ( 0.00%)      11 ( 0.00%)     0          0               11 ( 0.00%)   0          0               emit needRedraw();
+       66 ( 0.00%)      0          0               22 ( 0.00%)     0          0               11 ( 0.00%)   0          0               QGraphicsObject::hoverLeaveEvent(event);
+       66 ( 0.00%)      0          0               44 ( 0.00%)     0          0                0            0          0           }
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           int GraphicNode::type() const{
+        .               .          .                .              .          .                .            .          .               return 1;
+        .               .          .                .              .          .                .            .          .           }
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           double GraphicNode::distance(GraphicNode *n2) {
+-- line 94 ----------------------------------------
+-- line 105 ----------------------------------------
+        .               .          .                .              .          .                .            .          .           QPointF GraphicNode::normalize(GraphicNode* n2){
+        .               .          .                .              .          .                .            .          .               return QPointF((n2->CenterPosition().x() - this->CenterPosition().x()) / distance(n2),
+        .               .          .                .              .          .                .            .          .                              (n2->CenterPosition().y() - this->CenterPosition().y()) / distance(n2));
+        .               .          .                .              .          .                .            .          .           }
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           QPointF GraphicNode::normalize(QPointF point) {
+        .               .          .                .              .          .                .            .          .               return QPointF((point.x() - this->CenterPosition().x()) / distance(point),
+        .               .          .                .              .          .                .            .          .                              (point.y() - this->CenterPosition().y()) / distance(point));
+       21 ( 0.00%)      3 ( 0.00%) 3 ( 0.00%)       6 ( 0.00%)     0          0                5 ( 0.00%)   0          0           }
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+        .               .          .                .              .          .                .            .          .           
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
+--------------------------------------------------------------------------------
+Ir                 I1mr            ILmr       Dr                 D1mr       DLmr       Dw                 D1mw           DLmw       
+
+-- line 116 ----------------------------------------
+        .               .          .                  .          .          .                  .              .          .           #endif
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           /*****************************************************************************
+        .               .          .                  .          .          .                  .              .          .             QPoint inline functions
+        .               .          .                  .          .          .                  .              .          .            *****************************************************************************/
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline QPoint::QPoint() : xp(0), yp(0) {}
+        .               .          .                  .          .          .                  .              .          .           
+   65,175 ( 0.00%)  4,345 ( 0.01%) 2 ( 0.00%)    26,070 ( 0.00%) 0          0             26,070 ( 0.01%)     0          0           Q_DECL_CONSTEXPR inline QPoint::QPoint(int xpos, int ypos) : xp(xpos), yp(ypos) {}
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline bool QPoint::isNull() const
+        .               .          .                  .          .          .                  .              .          .           { return xp == 0 && yp == 0; }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline int QPoint::x() const
+        .               .          .                  .          .          .                  .              .          .           { return xp; }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline int QPoint::y() const
+-- line 132 ----------------------------------------
+-- line 281 ----------------------------------------
+        .               .          .                  .          .          .                  .              .          .           Q_CORE_EXPORT QDataStream &operator<<(QDataStream &, const QPointF &);
+        .               .          .                  .          .          .                  .              .          .           Q_CORE_EXPORT QDataStream &operator>>(QDataStream &, QPointF &);
+        .               .          .                  .          .          .                  .              .          .           #endif
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           /*****************************************************************************
+        .               .          .                  .          .          .                  .              .          .             QPointF inline functions
+        .               .          .                  .          .          .                  .              .          .            *****************************************************************************/
+        .               .          .                  .          .          .                  .              .          .           
+       52 ( 0.00%)      8 ( 0.00%) 2 ( 0.00%)        16 ( 0.00%) 0          0                 16 ( 0.00%)     0          0           Q_DECL_CONSTEXPR inline QPointF::QPointF() : xp(0), yp(0) { }
+        .               .          .                  .          .          .                  .              .          .           
+3,438,420 ( 0.12%) 11,871 ( 0.02%) 4 ( 0.00%) 1,375,368 ( 0.19%) 0          0          1,375,368 ( 0.36%) 6,395 ( 0.03%) 0           Q_DECL_CONSTEXPR inline QPointF::QPointF(qreal xpos, qreal ypos) : xp(xpos), yp(ypos) { }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline QPointF::QPointF(const QPoint &p) : xp(p.x()), yp(p.y()) { }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline qreal QPointF::manhattanLength() const
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               return qAbs(x())+qAbs(y());
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           inline bool QPointF::isNull() const
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               return qIsNull(xp) && qIsNull(yp);
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline qreal QPointF::x() const
+   18,204 ( 0.00%)    103 ( 0.00%) 0                  0          0          0              9,102 ( 0.00%)     0          0           {
+   13,653 ( 0.00%)    103 ( 0.00%) 0              9,102 ( 0.00%) 0          0                  0              0          0               return xp;
+   13,653 ( 0.00%)      0          0              9,102 ( 0.00%) 0          0                  0              0          0           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline qreal QPointF::y() const
+   18,204 ( 0.00%)  4,345 ( 0.01%) 2 ( 0.00%)         0          0          0              9,102 ( 0.00%)     0          0           {
+   13,653 ( 0.00%)      0          0              9,102 ( 0.00%) 0          0                  0              0          0               return yp;
+   13,653 ( 0.00%)      0          0              9,102 ( 0.00%) 0          0                  0              0          0           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_RELAXED_CONSTEXPR inline void QPointF::setX(qreal xpos)
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               xp = xpos;
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_RELAXED_CONSTEXPR inline void QPointF::setY(qreal ypos)
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               yp = ypos;
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_RELAXED_CONSTEXPR inline qreal &QPointF::rx()
+  104,280 ( 0.00%)  4,345 ( 0.01%) 1 ( 0.00%)         0          0          0             52,140 ( 0.01%)     0          0           {
+   26,070 ( 0.00%)      0          0             26,070 ( 0.00%) 0          0                  0              0          0               return xp;
+   52,140 ( 0.00%)      0          0             52,140 ( 0.01%) 0          0                  0              0          0           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_RELAXED_CONSTEXPR inline qreal &QPointF::ry()
+  104,280 ( 0.00%)  4,345 ( 0.01%) 0                  0          0          0             52,140 ( 0.01%)     0          0           {
+   52,140 ( 0.00%)      0          0             26,070 ( 0.00%) 0          0                  0              0          0               return yp;
+   52,140 ( 0.00%)      0          0             52,140 ( 0.01%) 0          0                  0              0          0           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_RELAXED_CONSTEXPR inline QPointF &QPointF::operator+=(const QPointF &p)
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               xp+=p.xp;
+        .               .          .                  .          .          .                  .              .          .               yp+=p.yp;
+        .               .          .                  .          .          .                  .              .          .               return *this;
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+-- line 341 ----------------------------------------
+-- line 363 ----------------------------------------
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline bool operator!=(const QPointF &p1, const QPointF &p2)
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               return !(p1 == p2);
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           QT_WARNING_POP
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline const QPointF operator+(const QPointF &p1, const QPointF &p2)
+1,201,520 ( 0.04%)  9,277 ( 0.02%) 4 ( 0.00%)   120,152 ( 0.02%) 0          0            600,760 ( 0.16%) 2,256 ( 0.01%) 0           {
+3,003,800 ( 0.11%)  9,271 ( 0.02%) 4 ( 0.00%) 1,201,520 ( 0.17%) 0          0            120,152 ( 0.03%)   245 ( 0.00%) 0               return QPointF(p1.xp+p2.xp, p1.yp+p2.yp);
+  841,064 ( 0.03%)      0          0            600,760 ( 0.08%) 0          0                  0              0          0           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline const QPointF operator-(const QPointF &p1, const QPointF &p2)
+        .               .          .                  .          .          .                  .              .          .           {
+        .               .          .                  .          .          .                  .              .          .               return QPointF(p1.xp-p2.xp, p1.yp-p2.yp);
+        .               .          .                  .          .          .                  .              .          .           }
+        .               .          .                  .          .          .                  .              .          .           
+        .               .          .                  .          .          .                  .              .          .           Q_DECL_CONSTEXPR inline const QPointF operator*(const QPointF &p, qreal c)
+        .               .          .                  .          .          .                  .              .          .           {
+-- line 381 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
+--------------------------------------------------------------------------------
+Ir                 I1mr           ILmr        Dr               D1mr           DLmr       Dw               D1mw           DLmw       
+
+-- line 49 ----------------------------------------
+        .              .           .                .              .          .                .              .          .           {
+        .              .           .                .              .          .                .              .          .               QtPrivate::RefCount ref;
+        .              .           .                .              .          .                .              .          .               int size;
+        .              .           .                .              .          .                .              .          .               uint alloc : 31;
+        .              .           .                .              .          .                .              .          .               uint capacityReserved : 1;
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               qptrdiff offset; // in bytes from beginning of header
+        .              .           .                .              .          .                .              .          .           
+  692,525 ( 0.02%)    17 ( 0.00%)  1 ( 0.00%)       0              0          0          277,010 ( 0.07%)     0          0               void *data()
+        .              .           .                .              .          .                .              .          .               {
+1,266,500 ( 0.04%)    15 ( 0.00%)  1 ( 0.00%) 633,250 ( 0.09%)     7 ( 0.00%) 1 ( 0.00%)       0              0          0                   Q_ASSERT(size == 0
+        .              .           .                .              .          .                .              .          .                           || offset < 0 || size_t(offset) >= sizeof(QArrayData));
+  692,525 ( 0.02%) 9,321 ( 0.02%)  3 ( 0.00%) 415,515 ( 0.06%)     0          0                0              0          0                   return reinterpret_cast<char *>(this) + offset;
+  277,010 ( 0.01%)     0           0          277,010 ( 0.04%)     0          0                0              0          0               }
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               const void *data() const
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_ASSERT(size == 0
+        .              .           .                .              .          .                .              .          .                           || offset < 0 || size_t(offset) >= sizeof(QArrayData));
+        .              .           .                .              .          .                .              .          .                   return reinterpret_cast<const char *>(this) + offset;
+        .              .           .                .              .          .                .              .          .               }
+        .              .           .                .              .          .                .              .          .           
+-- line 70 ----------------------------------------
+-- line 115 ----------------------------------------
+        .              .           .                .              .          .                .              .          .               Q_REQUIRED_RESULT static QArrayData *allocate(size_t objectSize, size_t alignment,
+        .              .           .                .              .          .                .              .          .                       size_t capacity, AllocationOptions options = Default) noexcept;
+        .              .           .                .              .          .                .              .          .               Q_REQUIRED_RESULT static QArrayData *reallocateUnaligned(QArrayData *data, size_t objectSize,
+        .              .           .                .              .          .                .              .          .                       size_t newCapacity, AllocationOptions newOptions = Default) noexcept;
+        .              .           .                .              .          .                .              .          .               static void deallocate(QArrayData *data, size_t objectSize,
+        .              .           .                .              .          .                .              .          .                       size_t alignment) noexcept;
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               static const QArrayData shared_null[2];
+  178,236 ( 0.01%) 9,392 ( 0.02%)  8 ( 0.01%)  89,118 ( 0.01%) 4,649 ( 0.02%) 2 ( 0.00%)  29,706 ( 0.01%)     0          0               static QArrayData *sharedNull() noexcept { return const_cast<QArrayData*>(shared_null); }
+        .              .           .                .              .          .                .              .          .           };
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .           Q_DECLARE_OPERATORS_FOR_FLAGS(QArrayData::AllocationOptions)
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .           template <class T>
+        .              .           .                .              .          .                .              .          .           struct QTypedArrayData
+        .              .           .                .              .          .                .              .          .               : QArrayData
+        .              .           .                .              .          .                .              .          .           {
+-- line 131 ----------------------------------------
+-- line 200 ----------------------------------------
+        .              .           .                .              .          .                .              .          .                   inline operator const T*() const { return i; }
+        .              .           .                .              .          .                .              .          .               };
+        .              .           .                .              .          .                .              .          .               friend class const_iterator;
+        .              .           .                .              .          .                .              .          .           #else
+        .              .           .                .              .          .                .              .          .               typedef T* iterator;
+        .              .           .                .              .          .                .              .          .               typedef const T* const_iterator;
+        .              .           .                .              .          .                .              .          .           #endif
+        .              .           .                .              .          .                .              .          .           
+1,385,050 ( 0.05%) 9,325 ( 0.02%) 12 ( 0.01%) 415,515 ( 0.06%)     0          0          415,515 ( 0.11%)     0          0               T *data() { return static_cast<T *>(QArrayData::data()); }
+        .              .           .                .              .          .                .              .          .               const T *data() const { return static_cast<const T *>(QArrayData::data()); }
+        .              .           .                .              .          .                .              .          .           
+  544,082 ( 0.02%) 4,648 ( 0.01%)  8 ( 0.01%) 148,386 ( 0.02%)     0          0          197,848 ( 0.05%)     0          0               iterator begin(iterator = iterator()) { return data(); }
+1,177,046 ( 0.04%)    28 ( 0.00%)  8 ( 0.01%) 346,190 ( 0.05%)     0          0          276,952 ( 0.07%)     0          0               iterator end(iterator = iterator()) { return data() + size; }
+        .              .           .                .              .          .                .              .          .               const_iterator begin(const_iterator = const_iterator()) const { return data(); }
+        .              .           .                .              .          .                .              .          .               const_iterator end(const_iterator = const_iterator()) const { return data() + size; }
+        .              .           .                .              .          .                .              .          .               const_iterator constBegin(const_iterator = const_iterator()) const { return data(); }
+        .              .           .                .              .          .                .              .          .               const_iterator constEnd(const_iterator = const_iterator()) const { return data() + size; }
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               class AlignmentDummy { QArrayData header; T data; };
+        .              .           .                .              .          .                .              .          .           
+  237,360 ( 0.01%) 9,281 ( 0.02%)  7 ( 0.01%)       0              0          0          118,680 ( 0.03%)     0          0               Q_REQUIRED_RESULT static QTypedArrayData *allocate(size_t capacity,
+        .              .           .                .              .          .                .              .          .                       AllocationOptions options = Default)
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+  276,920 ( 0.01%)     1 ( 0.00%)  1 ( 0.00%)  79,120 ( 0.01%)     0          0           39,560 ( 0.01%)     0          0                   return static_cast<QTypedArrayData *>(QArrayData::allocate(sizeof(T),
+        .              .           .                .              .          .                .              .          .                               Q_ALIGNOF(AlignmentDummy), capacity, options));
+   79,120 ( 0.00%)     0           0           79,120 ( 0.01%)     0          0                0              0          0               }
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               static QTypedArrayData *reallocateUnaligned(QTypedArrayData *data, size_t capacity,
+        .              .           .                .              .          .                .              .          .                       AllocationOptions options = Default)
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+        .              .           .                .              .          .                .              .          .                   return static_cast<QTypedArrayData *>(QArrayData::reallocateUnaligned(data, sizeof(T),
+        .              .           .                .              .          .                .              .          .                               capacity, options));
+        .              .           .                .              .          .                .              .          .               }
+        .              .           .                .              .          .                .              .          .           
+  101,810 ( 0.00%)   488 ( 0.00%)  7 ( 0.01%)       0              0          0           40,724 ( 0.01%)     0          0               static void deallocate(QArrayData *data)
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+  101,810 ( 0.00%)     0           0           20,362 ( 0.00%)     0          0           20,362 ( 0.01%)     0          0                   QArrayData::deallocate(data, sizeof(T), Q_ALIGNOF(AlignmentDummy));
+   61,086 ( 0.00%)     0           0           40,724 ( 0.01%)     0          0                0              0          0               }
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               static QTypedArrayData *fromRawData(const T *data, size_t n,
+        .              .           .                .              .          .                .              .          .                       AllocationOptions options = Default)
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+        .              .           .                .              .          .                .              .          .                   QTypedArrayData *result = allocate(0, options | RawData);
+        .              .           .                .              .          .                .              .          .                   if (result) {
+        .              .           .                .              .          .                .              .          .                       Q_ASSERT(!result->ref.isShared()); // No shared empty, please!
+-- line 248 ----------------------------------------
+-- line 249 ----------------------------------------
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .                       result->offset = reinterpret_cast<const char *>(data)
+        .              .           .                .              .          .                .              .          .                           - reinterpret_cast<const char *>(result);
+        .              .           .                .              .          .                .              .          .                       result->size = int(n);
+        .              .           .                .              .          .                .              .          .                   }
+        .              .           .                .              .          .                .              .          .                   return result;
+        .              .           .                .              .          .                .              .          .               }
+        .              .           .                .              .          .                .              .          .           
+   89,118 ( 0.00%) 4,654 ( 0.01%)  6 ( 0.00%)       0              0          0           29,706 ( 0.01%)     0          0               static QTypedArrayData *sharedNull() noexcept
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+   29,706 ( 0.00%)     0           0                0              0          0           29,706 ( 0.01%) 1,561 ( 0.01%) 0                   return static_cast<QTypedArrayData *>(QArrayData::sharedNull());
+   59,412 ( 0.00%)     0           0           59,412 ( 0.01%)     0          0                0              0          0               }
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .               static QTypedArrayData *sharedEmpty()
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+        .              .           .                .              .          .                .              .          .                   return allocate(/* capacity */ 0);
+        .              .           .                .              .          .                .              .          .               }
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .           #if !defined(QT_NO_UNSHARABLE_CONTAINERS)
+  138,460 ( 0.00%) 4,638 ( 0.01%)  3 ( 0.00%)  19,780 ( 0.00%)     0          0           39,560 ( 0.01%)     0          0               static QTypedArrayData *unsharableEmpty()
+        .              .           .                .              .          .                .              .          .               {
+        .              .           .                .              .          .                .              .          .                   Q_STATIC_ASSERT(sizeof(QTypedArrayData) == sizeof(QArrayData));
+  158,240 ( 0.01%)     0           0           19,780 ( 0.00%)     0          0           39,560 ( 0.01%)     0          0                   return allocate(/* capacity */ 0, Unsharable);
+   98,900 ( 0.00%) 4,637 ( 0.01%)  1 ( 0.00%)  79,120 ( 0.01%)     0          0                0              0          0               }
+        .              .           .                .              .          .                .              .          .           #endif
+        .              .           .                .              .          .                .              .          .           };
+        .              .           .                .              .          .                .              .          .           
+        .              .           .                .              .          .                .              .          .           template <class T, size_t N>
+        .              .           .                .              .          .                .              .          .           struct QStaticArrayData
+        .              .           .                .              .          .                .              .          .           {
+        .              .           .                .              .          .                .              .          .               QArrayData header;
+        .              .           .                .              .          .                .              .          .               T data[N];
+-- line 282 ----------------------------------------
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./elf/../sysdeps/x86_64/dl-machine.h
+  ./elf/./elf/dl-lookup.c
+  ./elf/./elf/do-rel.h
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+  ./nptl/./nptl/pthread_getspecific.c
+  ./nptl/./nptl/pthread_mutex_lock.c
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/strchr-avx2.S
+  ./string/../sysdeps/x86_64/multiarch/strcmp-avx2.S
+  ./string/../sysdeps/x86_64/multiarch/strlen-avx2.S
+  ./string/../sysdeps/x86_64/strcmp.S
+
+--------------------------------------------------------------------------------
+Ir                  I1mr             ILmr         Dr                 D1mr            DLmr       Dw                 D1mw            DLmw       
+--------------------------------------------------------------------------------
+29,766,839 ( 1.05%) 272,914 ( 0.54%) 262 ( 0.19%) 9,963,925 ( 1.38%) 19,499 ( 0.09%) 8 ( 0.00%) 6,178,007 ( 1.62%) 17,579 ( 0.09%) 0           events annotated
+
