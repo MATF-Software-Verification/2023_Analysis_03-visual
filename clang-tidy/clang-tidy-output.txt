@@ -1,0 +1,138 @@
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:878:126: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+            QMessageBox::information(this, "Finished", "<FONT COLOR='#171717'>There is no path from"+ QString::fromStdString(node1->name())+" to "+ QString::fromStdString(node2->name())+"</FONT>");
+                                                                                                                             ^~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:785:8: note: Assuming the condition is false
+    if(m_graph->nodeSet().empty()){
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:785:5: note: Taking false branch
+    if(m_graph->nodeSet().empty()){
+    ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:792:8: note: Assuming the condition is false
+    if(ui->pbBFS->isChecked()){
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:792:5: note: Taking false branch
+    if(ui->pbBFS->isChecked()){
+    ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:809:13: note: Assuming the condition is false
+    else if(ui->pbDFS->isChecked()){
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:809:10: note: Taking false branch
+    else if(ui->pbDFS->isChecked()){
+         ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:829:13: note: Assuming the condition is false
+    else if(ui->pbMST->isChecked()){  // works for undirected graph
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:829:10: note: Taking false branch
+    else if(ui->pbMST->isChecked()){  // works for undirected graph
+         ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:845:13: note: Assuming the condition is true
+    else if(ui->pbDjikstra->isChecked()){
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:845:10: note: Taking true branch
+    else if(ui->pbDjikstra->isChecked()){
+         ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:850:12: note: Assuming the condition is true
+        if(p->exec() == QDialog::Accepted){
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:850:9: note: Taking true branch
+        if(p->exec() == QDialog::Accepted){
+        ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:852:13: note: Value assigned to 'node1'
+            node1 = m_graph->getNode(nodeName.toStdString());
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:853:16: note: Assuming pointer value is null
+            if(node1 == nullptr)
+               ^~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:853:13: note: Taking true branch
+            if(node1 == nullptr)
+            ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:860:12: note: Assuming the condition is true
+        if(p->exec() == QDialog::Accepted){
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:860:9: note: Taking true branch
+        if(p->exec() == QDialog::Accepted){
+        ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:863:16: note: Assuming the condition is false
+            if(node2 == nullptr)
+               ^~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:863:13: note: Taking false branch
+            if(node2 == nullptr)
+            ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:877:12: note: Assuming the condition is true
+        if(result == -1){
+           ^~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:877:9: note: Taking true branch
+        if(result == -1){
+        ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:878:126: note: Called C++ object pointer is null
+            QMessageBox::information(this, "Finished", "<FONT COLOR='#171717'>There is no path from"+ QString::fromStdString(node1->name())+" to "+ QString::fromStdString(node2->name())+"</FONT>");
+                                                                                                                             ^~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:878:172: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+            QMessageBox::information(this, "Finished", "<FONT COLOR='#171717'>There is no path from"+ QString::fromStdString(node1->name())+" to "+ QString::fromStdString(node2->name())+"</FONT>");
+                                                                                                                                                                           ^~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:785:8: note: Assuming the condition is false
+    if(m_graph->nodeSet().empty()){
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:785:5: note: Taking false branch
+    if(m_graph->nodeSet().empty()){
+    ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:792:8: note: Assuming the condition is false
+    if(ui->pbBFS->isChecked()){
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:792:5: note: Taking false branch
+    if(ui->pbBFS->isChecked()){
+    ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:809:13: note: Assuming the condition is false
+    else if(ui->pbDFS->isChecked()){
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:809:10: note: Taking false branch
+    else if(ui->pbDFS->isChecked()){
+         ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:829:13: note: Assuming the condition is false
+    else if(ui->pbMST->isChecked()){  // works for undirected graph
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:829:10: note: Taking false branch
+    else if(ui->pbMST->isChecked()){  // works for undirected graph
+         ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:845:13: note: Assuming the condition is true
+    else if(ui->pbDjikstra->isChecked()){
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:845:10: note: Taking true branch
+    else if(ui->pbDjikstra->isChecked()){
+         ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:850:12: note: Assuming the condition is true
+        if(p->exec() == QDialog::Accepted){
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:850:9: note: Taking true branch
+        if(p->exec() == QDialog::Accepted){
+        ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:853:16: note: Assuming the condition is false
+            if(node1 == nullptr)
+               ^~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:853:13: note: Taking false branch
+            if(node1 == nullptr)
+            ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:860:12: note: Assuming the condition is true
+        if(p->exec() == QDialog::Accepted){
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:860:9: note: Taking true branch
+        if(p->exec() == QDialog::Accepted){
+        ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:862:13: note: Value assigned to 'node2'
+            node2 = m_graph->getNode(nodeName.toStdString());
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:863:16: note: Assuming pointer value is null
+            if(node2 == nullptr)
+               ^~~~~~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:863:13: note: Taking true branch
+            if(node2 == nullptr)
+            ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:877:12: note: Assuming the condition is true
+        if(result == -1){
+           ^~~~~~~~~~~~
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:877:9: note: Taking true branch
+        if(result == -1){
+        ^
+/home/matija/Desktop/Verifikacija/projekat/visual/build/../GraphVisual/Source/graphwindow.cpp:878:172: note: Called C++ object pointer is null
+            QMessageBox::information(this, "Finished", "<FONT COLOR='#171717'>There is no path from"+ QString::fromStdString(node1->name())+" to "+ QString::fromStdString(node2->name())+"</FONT>");
+                                                                                                                                                                           ^~~~~
