@@ -1,10 +1,5 @@
 #!/bin/bash
 
-mkdir ../visual/build && cd ../visual/build
-qmake -makefile ../GraphVisual/graph.pro > /dev/null
-bear -- make > /dev/null
-cd ../../clang-tidy
-
 CURRENT_DIR=$(pwd)
 PROJECT_DIR="${CURRENT_DIR}/../visual/GraphVisual"
 BUILD_DIR="${PROJECT_DIR}/../build"
@@ -22,5 +17,4 @@ find "${PROJECT_DIR}" \( -name "*.cpp" -o -name "*.h" \) -print0 \
       -checks=-clang-analyzer-webkit.RefCntblBaseVirtualDtor \
   > "${OUTPUT_FILE}"
 
-rm -rf ../visual/build
 
